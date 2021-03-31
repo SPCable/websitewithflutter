@@ -1,30 +1,49 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class ProjectStatisticsCards extends StatelessWidget {
+  _generateData() {
+    var pieData = [
+      new Task('Work', 35.8, Color(0xff3366cc)),
+      new Task('Eat', 8.3, Color(0xff990099)),
+      new Task('Commute', 10.8, Color(0xff109618)),
+      new Task('TV', 15.6, Color(0xfffdbe19)),
+      new Task('Sleep', 19.2, Color(0xffff9900)),
+      new Task('Other', 10.8, Color(0xffdc3912)),
+    ];
+  }
+
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        ProjectStatisticsCard(
-          count: '125',
-          name: 'Thêm biểu đồ vào',
-          descriptions: 'Biểu đồ doanh thu',
-          progress: 0.75,
-          progressString: '89%',
-          color: Color(0xffFAAA1E),
+        Container(
+          child: ProjectStatisticsCard(
+            count: '125',
+            name: 'Thêm biểu đồ vào',
+            descriptions: 'Biểu đồ doanh thu',
+            progress: 0.75,
+            progressString: '89%',
+            color: Color(0xffFAAA1E),
+          ),
         ),
+        // Container(
+        //   child: Row(
+        //     children: [
+
         ProjectStatisticsCard(
           count: '1269',
-          name: 'Quẹo lựa quẹo lựa',
+          name: 'Báo cáo doanh thu',
           color: Color(0xff6C6CE5),
           descriptions: '+ 101 con chó đốm',
           progress: 0.68,
           progressString: '69%',
         )
+
+        //     ],
+        //   ),
+        // ),
       ],
     );
   }
@@ -117,4 +136,12 @@ class ProjectStatisticsCard extends StatelessWidget {
       ),
     );
   }
+}
+
+class Task {
+  String task;
+  double taskvalue;
+  Color colorval;
+
+  Task(this.task, this.taskvalue, this.colorval);
 }

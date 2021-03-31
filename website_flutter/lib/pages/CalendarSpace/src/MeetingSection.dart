@@ -8,9 +8,10 @@ class MeetingSection extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          SubHeader(
-            title: 'Thành viên',
-          ),
+          // SubHeader(
+          //   title: 'Thành viên',
+          // ),
+          Padding(padding: EdgeInsets.symmetric(vertical: 10)),
           Container(
             height: 100.0,
             width: double.infinity,

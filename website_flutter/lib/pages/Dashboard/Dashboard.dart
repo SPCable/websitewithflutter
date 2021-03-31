@@ -19,17 +19,17 @@ class Dashboard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              margin: EdgeInsets.only(left: 30.0, top: 25.0, bottom: 10.0),
-              child: Text(
-                'HOME',
-                style: GoogleFonts.quicksand(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20.0,
-                ),
-              ),
-            ),
-            Tabs(),
+            // Container(
+            //   margin: EdgeInsets.only(left: 30.0, top: 25.0, bottom: 10.0),
+            //   child: Text(
+            //     'HOME',
+            //     style: GoogleFonts.quicksand(
+            //       fontWeight: FontWeight.bold,
+            //       fontSize: 20.0,
+            //     ),
+            //   ),
+            // ),
+            // Tabs(),
             Container(
               margin: EdgeInsets.only(top: 5.0),
               height: 200.0,

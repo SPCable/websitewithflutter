@@ -32,6 +32,8 @@ dependencies:
   flutter_feather_icons: ^1.0.3
   google_fonts: ^2.0.0
   percent_indicator: ^2.1.9+1
+  charts_flutter: ^0.10.0
+  fl_chart: ^0.30.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
