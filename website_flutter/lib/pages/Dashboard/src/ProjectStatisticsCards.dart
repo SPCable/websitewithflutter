@@ -19,14 +19,10 @@ class ProjectStatisticsCards extends StatelessWidget {
     return Row(
       children: [
         Container(
-          child: ProjectStatisticsCard(
-            count: '125',
-            name: 'Thêm biểu đồ vào',
-            descriptions: 'Biểu đồ doanh thu',
-            progress: 0.75,
-            progressString: '89%',
-            color: Color(0xffFAAA1E),
-          ),
+          padding: EdgeInsets.all(16),
+          color: Colors.black,
+          height: 500,
+          width: 500,
         ),
         // Container(
         //   child: Row(
@@ -39,8 +35,7 @@ class ProjectStatisticsCards extends StatelessWidget {
           descriptions: '+ 101 con chó đốm',
           progress: 0.68,
           progressString: '69%',
-        )
-
+        ),
         //     ],
         //   ),
         // ),
@@ -65,6 +60,7 @@ class ProjectStatisticsCard extends StatelessWidget {
     this.progressString,
     this.color,
   });
+  
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -137,6 +133,8 @@ class ProjectStatisticsCard extends StatelessWidget {
     );
   }
 }
+
+
 
 class Task {
   String task;
