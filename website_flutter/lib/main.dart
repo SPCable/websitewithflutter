@@ -6,7 +6,7 @@ import 'package:website_flutter/pages/login/login_page.dart';
 
 
 void main() {
-  runApp(MaterialApp(home: MyApp()));
+  runApp(MaterialApp(home: LoginPage()));
 }
 
 class MyApp extends StatelessWidget {
